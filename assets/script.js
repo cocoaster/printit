@@ -23,7 +23,7 @@ const dotsContainer = document.querySelector('.dots');
 const arrowLeft = document.querySelector('.arrow_left');
 const arrowRight = document.querySelector('.arrow_right');// Fonction générique pour créer une diapositive à partir des données
 
-// Addichage des images et des textes du carousel
+// Addichage une diapositive du carousel
 function createSlide(slideData) {
     const slide = document.createElement('div');
     slide.classList.add('slide');
@@ -42,7 +42,7 @@ function createSlide(slideData) {
 }
 
 
-// Fonction générique pour créer et afficher les diapositives
+// Fonction générique pour créer et afficher toutes les diapositives
 function createAndShowSlides(slidesData) {
     slidesData.forEach(slideData => {
         const slide = createSlide(slideData);
