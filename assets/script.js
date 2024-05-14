@@ -91,21 +91,12 @@ function showSlide(index) {
 
     // Cacher toutes les diapositives et désactiver tous les points
     slides.forEach(slide => slide.style.display = 'none');
-    dots.forEach(dot => dot.classList.remove('dot_selected')); // Modifier ici pour utiliser 'dot_selected'
+    dots.forEach(dot => dot.classList.remove('dot_selected')); // Retire la class dot_selected aux points des diapositives
 
     // Afficher la diapositive actuelle et activer le point correspondant
     slides[index].style.display = 'block';
-    dots[index].classList.add('dot_selected'); // Modifier ici pour utiliser 'dot_selected'
+    dots[index].classList.add('dot_selected'); //Ajoute la class 'dot_selected' sur le point correspondant à l'image courante
 }
-
-
-
-
-
-
-
-
-
 
 
 // Création et affichage des diapositives
