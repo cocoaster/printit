@@ -40,8 +40,6 @@ function createSlide(slideData) {
 }
 
 
-
-
 // Fonction générique pour créer et afficher les diapositives
 function createAndShowSlides(slidesData) {
     slidesData.forEach(slideData => {
@@ -78,6 +76,7 @@ function handleRightArrowClick() {
     showSlide(getCurrentSlideIndex() + 1);
 }
 
+// Synchronisation des slides sélectionnées avec les points correspondants et bouclage des slides
 function showSlide(index) {
     const slides = Array.from(slidesContainer.querySelectorAll('.slide'));
     const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
